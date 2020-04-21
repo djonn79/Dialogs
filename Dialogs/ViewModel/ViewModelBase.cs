@@ -17,5 +17,8 @@ namespace Dialogs.ViewModel
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
         }
 
+
+        public DialogResult DialogResult { get; set; }
+        public WindowType WindowType { get; set; }
     }
 }

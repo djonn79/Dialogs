@@ -66,7 +66,7 @@
     </ApplicationDefinition>
     <Compile Include="Utils\GifImage.cs" />
     <Compile Include="Utils\ImageBehavior.cs" />
-    <Compile Include="ViewModel\DialogVM.cs" />
+    <Compile Include="ViewModel\CriticalErrorVM.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="Views\CriticalErrorView.xaml.cs">
       <DependentUpon>CriticalErrorView.xaml</DependentUpon>
