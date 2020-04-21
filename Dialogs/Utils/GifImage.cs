@@ -9,7 +9,7 @@ using System.Windows.Media.Imaging;
 
 //local:ImageBehavior.AnimatedSource="/ShitDetector;component/Resources/Ring-Preloader.gif"
 
-namespace Dialogs.Utils
+namespace Dialogs.Views
 {
     [Serializable]
     public class GifImage : Image
