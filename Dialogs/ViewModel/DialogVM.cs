@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dialogs.ViewModel
 {
-    public class DialogVM
+    public class DialogVM : ViewModelBase
     {
         public DialogResult DialogResult { get; set; }
         public WindowType WindowType { get; set; }
