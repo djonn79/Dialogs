@@ -9,7 +9,10 @@ namespace Dialogs
 {
     public class RelayCommand : ICommand
     {
-        public event EventHandler CanExecuteChanged;
+        public event EventHandler CanExecuteChanged {
+            add { CommandManager.RequerySuggested += value; }
+            remove { CommandManager.RequerySuggested -= value; }
+        }
 
         public bool CanExecute(object parameter)
         {
@@ -21,7 +24,7 @@ namespace Dialogs
             execute?.Invoke(parameter);
         }
 
-        public Predicate<object> canExecute { get; set; }
+        public Predicate<object> canExecute { get; private set; }
         public Action<object> execute { get; private set; }
 
         public RelayCommand(Action<object> execute, Predicate<object> canExecute = null)
