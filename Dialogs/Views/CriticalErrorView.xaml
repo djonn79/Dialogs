@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Dialogs.Views"
         mc:Ignorable="d"
         Title="{Binding TitleWindow}" Width="800"
+        WindowStartupLocation="CenterScreen"
         SizeToContent="Height"
         >
     <Grid>
@@ -31,7 +32,7 @@
             </Grid>
         </Border>
         <Border Grid.Row="1" Margin="5" BorderBrush="Black" BorderThickness="1" CornerRadius="5">
-            <Expander   VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <Expander VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
                 <Expander.Header>
                     <Label Content="Подробная информация"/>
                 </Expander.Header>

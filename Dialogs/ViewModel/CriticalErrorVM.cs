@@ -8,5 +8,6 @@ namespace Dialogs.ViewModel
 {
     public class CriticalErrorVM : ViewModelBase
     {
+    
     }
 }
